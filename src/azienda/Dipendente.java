@@ -2,19 +2,19 @@ package azienda;
 
 public class Dipendente {
     private String matricola;
-    private float stipendio;
-    private float straordinario;
+    private double stipendio;
+    private double straordinario;
 
-    public float getStipendio(){
+    public double getStipendio(){
         return stipendio;
     }
-    public float paga(int ore){
+    public double paga(int ore){
         return stipendio + (straordinario*ore);
     }
     public String stampa(){
         return matricola + " - " + stipendio + " - " + straordinario;
     }
-    public Dipendente(String matricola, float stipendio, float straordinario){
+    public Dipendente(String matricola, double stipendio, double straordinario){
         this.matricola = matricola;
         this.stipendio = stipendio;
         this.straordinario = straordinario;
